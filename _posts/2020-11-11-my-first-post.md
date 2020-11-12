@@ -51,7 +51,7 @@ Perhaps we may be wondering how long is a bike ride each time a client picks it 
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98980734-ed8dd100-2514-11eb-93a4-95211e5e68fb.png">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalduration.png?raw=true">
 </p> 
 <br />
 <br /> 
@@ -60,7 +60,7 @@ The idle time is measured as the time between a drop off and a subsequent pick u
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98980772-f7afcf80-2514-11eb-8d83-f78fdd650cb4.png">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/idletime.png?raw=true">
 </p> 
 <br />
 <br /> 
@@ -69,7 +69,8 @@ If you are a tourist, you may wonder what the most famous pick up and drop off l
 <br />
 <br />
 <p align="center">
-<img width="300" height="400" src="https://user-images.githubusercontent.com/59604828/98980846-131ada80-2515-11eb-97f4-35d881afca20.png">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/pickupstation.png?raw=true">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/dropoffstation.png?raw=true">
 </p> 
 <br />
 <br /> 
@@ -78,7 +79,7 @@ As expected, the number of bike rentals starts to pick up in early spring as the
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98980897-2cbc2200-2515-11eb-96fa-24eb191581a3.png">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalweekcount.png?raw=true">
 </p> 
 <br />
 <br /> 
