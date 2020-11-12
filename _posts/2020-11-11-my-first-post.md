@@ -69,7 +69,7 @@ If you are a tourist, you may wonder what the most famous pick up and drop off l
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98971050-92ee7800-2508-11eb-9aea-1410da8d5293.png">
+<img width="300" height="400" src="https://user-images.githubusercontent.com/59604828/98980846-131ada80-2515-11eb-97f4-35d881afca20.png">
 </p> 
 <br />
 <br /> 
@@ -78,7 +78,7 @@ As expected, the number of bike rentals starts to pick up in early spring as the
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98971050-92ee7800-2508-11eb-9aea-1410da8d5293.png">
+<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98980897-2cbc2200-2515-11eb-96fa-24eb191581a3.png">
 </p> 
 <br />
 <br /> 
