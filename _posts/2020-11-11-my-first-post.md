@@ -51,7 +51,7 @@ Perhaps we may be wondering how long is a bike ride each time a client picks it 
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98971050-92ee7800-2508-11eb-9aea-1410da8d5293.png">
+<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98980734-ed8dd100-2514-11eb-93a4-95211e5e68fb.png">
 </p> 
 <br />
 <br /> 
