@@ -23,7 +23,7 @@ The figure below is a sneak peek of the data, showing the first 3 rows and the l
 <br />
 <br />
 <p align="center">
-  <img width="600" height="300" src="https://user-images.githubusercontent.com/59604828/98967914-f1195c00-2504-11eb-9ce4-2e0322b30f4e.png">
+  <img width="600" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/headtail.png?raw=true">
 </p> 
 <br />
 <br />
@@ -45,21 +45,22 @@ Grouping and counting the rental Ids for each bike, we find that, **on average e
 <p align="center">
 <img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalsperbike.png?raw=true">
 </p> 
-<br />
 <br /> 
+<br />
 
 #### What was the average duration of a bike rental in 2018?
-Perhaps we may be wondering how long is a bike ride each time a client picks it up. Again, grouping and averaging the duration of rentals for each bike, we calculated that whenever a bike was picked up, the ride lasted just under 20 minutes on average. In fact, 99.7% of the bike rentals lasted just under 30 minutes. Is this perhaps because the first 30 minutes are free? Side note: we see the law of large numbers and the central limit theorem come into full effect in the distribution of bike rental duration in the figure below:
+Perhaps we may be wondering how long is a bike ride each time a client picks it up. Again, grouping and averaging the duration of rentals for each bike, we calculated that whenever a bike was picked up, **the ride lasted just under 20 minutes on average**. In fact, 99.7% of the bike rentals lasted just under 30 minutes. Is this perhaps because the first 30 minutes are free? Side note: we see the law of large numbers and the central limit theorem come into full effect in the distribution of bike rental duration in the figure below:
 <br />
 <br />
 <p align="center">
 <img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalduration.png?raw=true">
 </p> 
 <br />
-<br /> 
+<br />
 
 #### What was the average daily idle time for each bike?
-The idle time is measured as the time between a drop off and a subsequent pick up for each bike on any given day. It does not account for overnight idle time, and also sets a maximum threshold to remove incidents where a bike went unused for a number of days. On average, each bike registered an idle time of 2.5 hours before it’s picked up again. The full distribution of idle time is shown in the figure below: 
+The idle time is measured as the time between a drop off and a subsequent pick up for each bike on any given day. It does not account for overnight idle time, and also sets a maximum threshold to remove incidents where a bike went unused for a number of days. On average, each bike registered **an idle time of 2.5 hours** before it’s picked up again. 
+As a product manager, if you found that the bike only gets picked up 2 times per day on average for a total duration of 40 minutes and sits idle for the remainder of the day, what would you do? The full distribution of idle time is shown in the figure below: 
 <br />
 <br />
 <p align="center">
@@ -69,12 +70,12 @@ The idle time is measured as the time between a drop off and a subsequent pick u
 <br /> 
 
 #### What are the famous pick up and drop off locations?
-If you are a tourist, you may wonder what the most famous pick up and drop off locations are. They could be right next to the most attractive tourist locations, or the most accessible underground stations. Or you're doing some kind of outreach and wish to reach out to the "physically active" Londoners and visitors. Whatever the reasons, King’s Cross, Hyde Park, and Waterloo are the most famous pick up and drop off station.
+If you are a tourist, you may wonder what the most famous pick up and drop off locations are. They could be right next to the most attractive tourist locations, or the most accessible underground stations. Or you're doing some kind of outreach and wish to reach out to the "physically active" Londoners and visitors. Whatever the reasons, **King’s Cross, Hyde Park, and Waterloo** are the most famous pick up and drop off station.
 <br />
 <br />
 <p align="center">
-<img width="500" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/pickupstation.png?raw=true">
-<img width="500" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/dropoffstation.png?raw=true">
+<img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/pickupstation.png?raw=true">
+<img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/dropoffstation.png?raw=true">
 </p> 
 <br />
 <br /> 
@@ -90,7 +91,11 @@ As expected, the number of bike rentals starts to pick up in early spring as the
 <br /> 
 
 #### Does the weather affect the number of bikes rented?
-Since the number of bike rentals begins to pick up in early spring, can we say that the weather has a strong impact on the number of bicycles rented? In the next blog post, we will analyze the hourly weather for the city of London in 2018 and determine if there was a direct correlation of the weather conditions and the number of bikes rented. 
-See you next time. 
+Since the number of bike rentals begins to pick up in early spring, can we say that the weather has a strong impact on the number of bicycles rented? **In the next blog post**, we will analyze the hourly weather for the city of London in 2018 and determine if there was a direct correlation between the weather conditions and the number of bikes rented. 
+**See you next time**. 
+<br />
+<br /> 
 
- 
+<p style="font-size:12px"> 
+This blog post and the contents therein are for educational purposes and should not be used to drive any business decisions or profit making. <br /> 
+Contains OS data © Crown copyright and database rights 2016' and Geomni UK Map data © and database rights [2020]</p>
