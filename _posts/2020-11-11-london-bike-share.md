@@ -37,6 +37,7 @@ Now that we know that there were 10,500,357 bike rentals in 2018, what else can 
 -	Does the weather affect the number of bikes rented?
 <br />
 <br />
+
 #### How many times was each bike rented in 2018?  
 Grouping and counting the rental Ids for each bike, we find that, **on average each bike was rented 796 times in 2018**, which is a little over 2 times per day, and in fact, over 70% of the bikes were rented at least 2 times per day. The distribution of total number of rentals per bike is shown in the figure below:
 <br />
@@ -46,6 +47,7 @@ Grouping and counting the rental Ids for each bike, we find that, **on average e
 </p> 
 <br />
 <br /> 
+
 #### What was the average duration of a bike rental in 2018?
 Perhaps we may be wondering how long is a bike ride each time a client picks it up. Again, grouping and averaging the duration of rentals for each bike, we calculated that whenever a bike was picked up, the ride lasted just under 20 minutes on average. In fact, 99.7% of the bike rentals lasted just under 30 minutes. Is this perhaps because the first 30 minutes are free? Side note: we see the law of large numbers and the central limit theorem come into full effect in the distribution of bike rental duration in the figure below:
 <br />
@@ -55,6 +57,7 @@ Perhaps we may be wondering how long is a bike ride each time a client picks it 
 </p> 
 <br />
 <br /> 
+
 #### What was the average daily idle time for each bike?
 The idle time is measured as the time between a drop off and a subsequent pick up for each bike on any given day. It does not account for overnight idle time, and also sets a maximum threshold to remove incidents where a bike went unused for a number of days. On average, each bike registered an idle time of 2.5 hours before it’s picked up again. The full distribution of idle time is shown in the figure below: 
 <br />
@@ -64,6 +67,7 @@ The idle time is measured as the time between a drop off and a subsequent pick u
 </p> 
 <br />
 <br /> 
+
 #### What are the famous pick up and drop off locations?
 If you are a tourist, you may wonder what the most famous pick up and drop off locations are. They could be right next to the most attractive tourist locations, or the most accessible underground stations. Or you're doing some kind of outreach and wish to reach out to the "physically active" Londoners and visitors. Whatever the reasons, King’s Cross, Hyde Park, and Waterloo are the most famous pick up and drop off station.
 <br />
@@ -74,6 +78,7 @@ If you are a tourist, you may wonder what the most famous pick up and drop off l
 </p> 
 <br />
 <br /> 
+
 #### What are the popular months for bike rentals?
 As expected, the number of bike rentals starts to pick up in early spring as the weather becomes more favorable, peaking in mid summer as tourists flock the city before tapering off. 
 <br />
@@ -83,6 +88,7 @@ As expected, the number of bike rentals starts to pick up in early spring as the
 </p> 
 <br />
 <br /> 
+
 #### Does the weather affect the number of bikes rented?
 Since the number of bike rentals begins to pick up in early spring, can we say that the weather has a strong impact on the number of bicycles rented? In the next blog post, we will analyze the hourly weather for the city of London in 2018 and determine if there was a direct correlation of the weather conditions and the number of bikes rented. 
 See you next time. 
