@@ -16,10 +16,14 @@ Did you know that the average bike gets picked up 2 times per day? What about th
 In this dataful story, we access Transport for London open data repositories and analyze the 2018 bike sharing statistics for the city of London. 
 
 **Data** <br />
-Bike rental transaction data is shared here: <a href=" https://cycling.data.tfl.gov.uk/"> cycling.data.tfl.gov.uk </a>, with full access granted to the general public under these terms and conditions: <a href= "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service"> Transport Data Service </a>. <br />
-The data files contain transactions for a week’s period. 
-To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for data processing and analysis such as Python Pandas. <br />
+Bike rental transaction data is shared here: <a href="https://cycling.data.tfl.gov.uk/"> cycling.data.tfl.gov.uk</a>, with full access granted to the general public under these terms and conditions: <a href= "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service"> Transport Data Service </a>. <br />
+Individual data files contain transactions for a week’s period. 
+To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for transactional data processing and analysis such as Python Pandas. <br />
 The figure below is a sneak peek of the data, showing the first 3 rows and the last 3 rows (data loaded in no particular chronological order), confirming that there were indeed 10,500,357 bike rentals in 2018. 
+
+<p align="center">
+  <img width="300" height="300" src="https://user-images.githubusercontent.com/59604828/98951668-73e4eb80-24f2-11eb-8450-177230229650.png">
+</p> 
 
  
 The dataset contains rental Id for each bike rental, the duration of the bike rental in seconds, the specific bike Id that was rented, pick up and drop off times, as well as pick up and drop off stations (and their Id’s). 
