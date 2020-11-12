@@ -18,12 +18,12 @@ In this dataful story, we access Transport for London open data repositories and
 #### Data
 Bike rental transaction data is shared here: <a href="https://cycling.data.tfl.gov.uk/"> cycling.data.tfl.gov.uk</a>, with full access granted to the general public under these terms and conditions: <a href= "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service"> Transport Data Service </a>. <br />
 Individual data files contain transactions for a week’s period. 
-To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for transactional data processing and analysis such as Python Pandas. <br />
+To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for transactional data processing and analysis such as **Python Pandas**. The Jupyter Notebook used for the following exercise can be found <a href="https://still-cleaning-it-up"> here </a>.<br />
 The figure below is a sneak peek of the data, showing the first 3 rows and the last 3 rows (data loaded in no particular chronological order), confirming that there were indeed 10,500,357 bike rentals in 2018. 
 <br />
 <br />
 <p align="center">
-  <img width="600" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/headtail.png?raw=true">
+  <img width="600" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/headtail.PNG?raw=true">
 </p> 
 <br />
 <br />
@@ -60,7 +60,7 @@ Perhaps we may be wondering how long is a bike ride each time a client picks it 
 
 #### What was the average daily idle time for each bike?
 The idle time is measured as the time between a drop off and a subsequent pick up for each bike on any given day. It does not account for overnight idle time, and also sets a maximum threshold to remove incidents where a bike went unused for a number of days. On average, each bike registered **an idle time of 2.5 hours** before it’s picked up again. 
-As a product manager, if you found that the bike only gets picked up 2 times per day on average for a total duration of 40 minutes and sits idle for the remainder of the day, what would you do? The full distribution of idle time is shown in the figure below: 
+As a product manager, if you found that the bikes only get picked up 2 times per day on average for a duration of 20 minutes per ride and then sit idle for the remainder of the day, what would you do? The full distribution of idle time is shown in the figure below: 
 <br />
 <br />
 <p align="center">
@@ -98,4 +98,5 @@ Since the number of bike rentals begins to pick up in early spring, can we say t
 
 <p style="font-size:12px"> 
 This blog post and the contents therein are for educational purposes and should not be used to drive any business decisions or profit making. <br /> 
+Bike image: From @santandercycles on Instagram <br />
 Contains OS data © Crown copyright and database rights 2016' and Geomni UK Map data © and database rights [2020]</p>
