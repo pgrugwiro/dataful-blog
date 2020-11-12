@@ -42,7 +42,7 @@ Grouping and counting the rental Ids for each bike, we find that, **on average e
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98971050-92ee7800-2508-11eb-9aea-1410da8d5293.png">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalsperbike.png?raw=true">
 </p> 
 <br />
 <br /> 
