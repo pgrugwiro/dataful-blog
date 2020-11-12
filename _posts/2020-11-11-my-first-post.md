@@ -60,7 +60,7 @@ The idle time is measured as the time between a drop off and a subsequent pick u
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98971050-92ee7800-2508-11eb-9aea-1410da8d5293.png">
+<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98980772-f7afcf80-2514-11eb-8d83-f78fdd650cb4.png">
 </p> 
 <br />
 <br /> 
