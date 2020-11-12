@@ -5,16 +5,13 @@ date:   2020-11-11 22:50:22 +0000
 categories: jekyll update
 ---
 
-Besides your Oyster card and London Underground, another excellent way to get around the city of London for visitors is by bicycle. The bike share program has made it easy for travelers by placing over 700 docking stations and over 10000 bicycles around the city. These bicycles are truly ubiquitous and have become a staple of the city. Renting a bicycle will only cost your 2$ for a full day access as long as your rides are below 30 minutes. Longer rides will cost you an additional fee. 
+Besides your Oyster card and London Underground, another excellent way to get around the city of London for visitors is by bicycle. The bike share program has made it easy for travelers by placing over 700 docking stations and over 10000 bicycles around the city. These bicycles are truly ubiquitous and have become a staple of the city. Renting a bicycle will only cost your 2$ for a full day access as long as your rides are below 30 minutes. Longer rides will cost you an additional fee. \
 
-\
 <p align="center">
   <img width="300" height="300" src="https://user-images.githubusercontent.com/59604828/98951668-73e4eb80-24f2-11eb-8450-177230229650.png">
 </p>
               
-
-
-
+\
 
 Did you know that the average bicycle gets picked up 2 times per day? What about the fact that in 2018, there were 10 million rentals and riders spent a total of 40 million hours on the bicycle? 
 
