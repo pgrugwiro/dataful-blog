@@ -9,8 +9,9 @@ Besides your Oyster card and London Underground, another excellent way to get ar
 
 \
 <p align="center">
-![image](https://user-images.githubusercontent.com/59604828/98951668-73e4eb80-24f2-11eb-8450-177230229650.png)
+  <img width="300" height="300" src="https://user-images.githubusercontent.com/59604828/98951668-73e4eb80-24f2-11eb-8450-177230229650.png">
 </p>
+              
 
 
 
