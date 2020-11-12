@@ -38,7 +38,6 @@ Now that we know that there were 10,500,357 bike rentals in 2018, what else can 
 
 
 #### How many times was each bike rented in 2018? 
-<br />
 Grouping and counting the rental Ids for each bike, we find that, **on average each bike was rented 796 times in 2018**, which is a little over 2 times per day, and in fact, over 70% of the bikes were rented at least 2 times per day. The distribution of total number of rentals per bike is shown in the figure below:
 <br />
 <br />
@@ -49,7 +48,6 @@ Grouping and counting the rental Ids for each bike, we find that, **on average e
 <br /> 
 
 #### Average duration of a rental: 
-<br />
 On average, whenever a bike was picked up, the ride lasted just under 20 minutes. In fact, 99.7% of the bike rentals lasted just under 30 minutes. Is this perhaps because the first 30 minutes are free? Side note: we see the law of large numbers and the central limit theorem come into full effect.
  
 
