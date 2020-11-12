@@ -11,15 +11,14 @@ Besides your Oyster card and London Underground, another excellent way to get ar
   <img width="300" height="300" src="https://user-images.githubusercontent.com/59604828/98951668-73e4eb80-24f2-11eb-8450-177230229650.png">
 </p>              
 <br />
-Did you know that the average bicycle gets picked up 2 times per day? What about the fact that in 2018, there were 10 million rentals and riders spent a total of 40 million hours on the bicycle? 
+Did you know that the average bike gets picked up 2 times per day? What about the fact that in 2018, there were 10 million bike rentals and riders spent a total of 3.5 million hours on the bikes? 
 
 In this dataful story, we access Transport for London open data repositories and analyze the 2018 bike sharing statistics for the city of London. 
 
-Data
-Bike rental transaction data is shared here:  https://cycling.data.tfl.gov.uk/, with full access granted to the general public under these terms and conditions: https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service. The data files contain transactions for a week’s period. 
- 
-
-To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows in our dataset, which will require advanced data analysis tools such as Python Pandas to accomplish the task of data analysis. 
+<b Data /> <br />
+Bike rental transaction data is shared here: <a href=" https://cycling.data.tfl.gov.uk/">link text</a>, with full access granted to the general public under these terms and conditions: <a href= https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service >link text</a>. <br />
+The data files contain transactions for a week’s period. 
+To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for data processing and analysis such as Python Pandas. <br />
 The figure below is a sneak peek of the data, showing the first 3 rows and the last 3 rows (data loaded in no particular chronological order), confirming that there were indeed 10,500,357 bike rentals in 2018. 
 
  
