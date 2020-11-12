@@ -81,7 +81,7 @@ While we're on the topic of the most frequented pickup & drop off locations, it 
 <br />
 <br />
 <p align="center">
-<img width="500" height="500" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/Rplot.png?raw=true">
+<img width="500" height="480" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/Rplot.png?raw=true">
 </p> 
 
 <br />
