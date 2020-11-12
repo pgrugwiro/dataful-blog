@@ -69,8 +69,8 @@ If you are a tourist, you may wonder what the most famous pick up and drop off l
 <br />
 <br />
 <p align="center">
-<img width="450" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/pickupstation.png?raw=true">
-<img width="450" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/dropoffstation.png?raw=true">
+<img width="500" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/pickupstation.png?raw=true">
+<img width="500" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/dropoffstation.png?raw=true">
 </p> 
 <br />
 <br /> 
