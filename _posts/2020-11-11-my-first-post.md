@@ -20,13 +20,13 @@ Bike rental transaction data is shared here: <a href="https://cycling.data.tfl.g
 Individual data files contain transactions for a week’s period. 
 To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for transactional data processing and analysis such as Python Pandas. <br />
 The figure below is a sneak peek of the data, showing the first 3 rows and the last 3 rows (data loaded in no particular chronological order), confirming that there were indeed 10,500,357 bike rentals in 2018. 
-
+<br />
+<br />
 <p align="center">
   <img width="600" height="300" src="https://user-images.githubusercontent.com/59604828/98967914-f1195c00-2504-11eb-9ce4-2e0322b30f4e.png">
 </p> 
-
-
-
+<br />
+<br />
 The dataset contains rental Id for each bike rental, the duration of the bike rental in seconds, the specific bike Id that was rented, pick up and drop off times, as well as pick up and drop off stations (and their Id’s). 
 Now that we know that there were 10,500,357 bike rentals in 2018, what else can we learn from this dataset? 
 -	How many times was each bike rented in 2018?
@@ -37,15 +37,19 @@ Now that we know that there were 10,500,357 bike rentals in 2018, what else can 
 -	Does the weather affect the number of bikes rented?
 
 
-How many times was each bike rented in 2018? <br />
+#### How many times was each bike rented in 2018? 
+<br />
 Grouping and counting the rental Ids for each bike, we find that, **on average each bike was rented 796 times in 2018**, which is a little over 2 times per day, and in fact, over 70% of the bikes were rented at least 2 times per day. The distribution of total number of rentals per bike is shown in the figure below:
-
+<br />
+<br />
 <p align="center">
 <img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98971050-92ee7800-2508-11eb-9aea-1410da8d5293.png">
 </p> 
- 
+<br />
+<br /> 
 
-Average duration of a rental:
+#### Average duration of a rental: 
+<br />
 On average, whenever a bike was picked up, the ride lasted just under 20 minutes. In fact, 99.7% of the bike rentals lasted just under 30 minutes. Is this perhaps because the first 30 minutes are free? Side note: we see the law of large numbers and the central limit theorem come into full effect.
  
 
