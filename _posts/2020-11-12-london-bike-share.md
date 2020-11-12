@@ -11,7 +11,7 @@ Besides your Oyster card and London Underground, another excellent way to get ar
   <img width="300" height="300" src="https://user-images.githubusercontent.com/59604828/98951668-73e4eb80-24f2-11eb-8450-177230229650.png">
 </p>              
 <br />
-Did you know that the average bike gets picked up 2 times per day? What about the fact that in 2018, there were 10 million bike rentals and riders spent a total of 3.5 million hours on the bikes? 
+Did you know that the average bike gets picked up 2 times per day? What about the fact that in 2018, there were 10 million bike rentals, and riders spent a total of 3.5 million hours on the bikes? 
 
 In this dataful story, we access Transport for London open data repositories and analyze the 2018 bike sharing statistics for the city of London. 
 
