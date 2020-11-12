@@ -31,7 +31,7 @@ The dataset contains rental Id for each bike rental, the duration of the bike re
 Now that we know that there were 10,500,357 bike rentals in 2018, what else can we learn from this dataset? 
 -	How many times was each bike rented in 2018?
 -	What was the average duration of a rental in 2018?
--	What was the average daily idle time for each bike?
+-	What was the average daily idle time for each bike in 2018?
 -	What are the most commonly used pick up and drop off locations?
 -	What are the popular months for bike rentals?
 -	Does the weather affect the number of bikes rented?
@@ -58,7 +58,7 @@ Perhaps we may be wondering how long is a bike ride each time a client picks it 
 <br />
 <br />
 
-#### What was the average daily idle time for each bike?
+#### What was the average daily idle time for each bike in 2018?
 The idle time is measured as the time between a drop off and a subsequent pick up for each bike on any given day. It does not account for overnight idle time, and also sets a maximum threshold to remove incidents where a bike went unused for a number of days. On average, each bike registered **an idle time of 2.5 hours** before it’s picked up again. 
 As a product manager, if you found that the bikes only get picked up 2 times per day on average for a duration of 20 minutes per ride and then sit idle for the remainder of the day, what would you do? The full distribution of idle time is shown in the figure below: 
 <br />
@@ -77,6 +77,13 @@ If you are a tourist, you may wonder what the most famous pick up and drop off l
 <img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/pickupstation.png?raw=true">
 <img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/dropoffstation.png?raw=true">
 </p> 
+
+While we're on the topic of the most frequented pickup & drop off locations, it is worth noting that Hyde Park station has a longer bike rental duration compared to her counterparts. 
+<br />
+<p align="center">
+<img width="500" height="500" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/Rplot.png?raw=true">
+</p> 
+
 <br />
 <br /> 
 
@@ -85,7 +92,7 @@ As expected, the number of bike rentals starts to pick up in early spring as the
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalweekcount.png?raw=true">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalmonthcount.png?raw=true">
 </p> 
 <br />
 <br /> 
