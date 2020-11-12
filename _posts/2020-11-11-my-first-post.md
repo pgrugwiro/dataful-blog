@@ -22,10 +22,11 @@ To calculate yearly statistics, the first step is to download these files and co
 The figure below is a sneak peek of the data, showing the first 3 rows and the last 3 rows (data loaded in no particular chronological order), confirming that there were indeed 10,500,357 bike rentals in 2018. 
 
 <p align="center">
-  <img width="300" height="300" src="https://user-images.githubusercontent.com/59604828/98951668-73e4eb80-24f2-11eb-8450-177230229650.png">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/59604828/98967914-f1195c00-2504-11eb-9ce4-2e0322b30f4e.png">
 </p> 
 
- 
+
+
 The dataset contains rental Id for each bike rental, the duration of the bike rental in seconds, the specific bike Id that was rented, pick up and drop off times, as well as pick up and drop off stations (and their Id’s). 
 Now that we know that there were 10,500,357 bike rentals in 2018, what else can we learn from this dataset? 
 -	How many times was each bike rented in 2018?
