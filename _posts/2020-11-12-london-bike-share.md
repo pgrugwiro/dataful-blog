@@ -32,7 +32,7 @@ Now that we know that there were 10,500,357 bike rentals in 2018, what else can 
 -	How many times was each bike rented in 2018?
 -	What was the average duration of a rental in 2018?
 -	What was the average daily idle time for each bike?
--	What are the famous pick up and drop off locations?
+-	What are the most commonly used pick up and drop off locations?
 -	What are the popular months for bike rentals?
 -	Does the weather affect the number of bikes rented?
 <br />
@@ -69,7 +69,7 @@ As a product manager, if you found that the bikes only get picked up 2 times per
 <br />
 <br /> 
 
-#### What are the famous pick up and drop off locations?
+#### What are the most commonly used pick up and drop off locations?
 If you are a tourist, you may wonder what the most famous pick up and drop off locations are. They could be right next to the most attractive tourist locations, or the most accessible underground stations. Or you're doing some kind of outreach and wish to reach out to the "physically active" Londoners and visitors. Whatever the reasons, **King’s Cross, Hyde Park, and Waterloo** are the most famous pick up and drop off station.
 <br />
 <br />
