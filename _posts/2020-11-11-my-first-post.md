@@ -41,7 +41,7 @@ How many times was each bike rented in 2018? <br />
 Grouping and counting the rental Ids for each bike, we find that, **on average each bike was rented 796 times in 2018**, which is a little over 2 times per day, and in fact, over 70% of the bikes were rented at least 2 times per day. The distribution of total number of rentals per bike is shown in the figure below:
 
 <p align="center">
-<img width="600" height="300" src=" ">
+<img width="400" height="300" src="https://user-images.githubusercontent.com/59604828/98971050-92ee7800-2508-11eb-9aea-1410da8d5293.png">
 </p> 
  
 
