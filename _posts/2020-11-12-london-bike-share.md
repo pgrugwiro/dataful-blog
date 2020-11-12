@@ -79,6 +79,7 @@ If you are a tourist, you may wonder what the most famous pick up and drop off l
 
 While we're on the topic of the most frequented pickup & drop off locations, it is worth noting that Hyde Park station has a longer bike rental duration compared to her counterparts. 
 <br />
+<br />
 <p align="center">
 <img width="500" height="500" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/Rplot.png?raw=true">
 </p> 
