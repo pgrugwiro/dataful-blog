@@ -15,7 +15,7 @@ Did you know that the average bike gets picked up 2 times per day? What about th
 
 In this dataful story, we access Transport for London open data repositories and analyze the 2018 bike sharing statistics for the city of London. 
 
-**Data** <br />
+#### Data
 Bike rental transaction data is shared here: <a href="https://cycling.data.tfl.gov.uk/"> cycling.data.tfl.gov.uk</a>, with full access granted to the general public under these terms and conditions: <a href= "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service"> Transport Data Service </a>. <br />
 Individual data files contain transactions for a week’s period. 
 To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for transactional data processing and analysis such as Python Pandas. <br />
@@ -35,7 +35,8 @@ Now that we know that there were 10,500,357 bike rentals in 2018, what else can 
 -	What are the popular months for bike rentals?
 -	What is the average time between rentals for each bike?
 -	Does the weather affect the number of bikes rented?
-
+<br />
+<br />
 
 #### How many times was each bike rented in 2018? 
 Grouping and counting the rental Ids for each bike, we find that, **on average each bike was rented 796 times in 2018**, which is a little over 2 times per day, and in fact, over 70% of the bikes were rented at least 2 times per day. The distribution of total number of rentals per bike is shown in the figure below:
