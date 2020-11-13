@@ -17,7 +17,7 @@ In this dataful story, we access Transport for London open data repositories and
 #### Data
 Bike rental transaction data is shared here: <a href="https://cycling.data.tfl.gov.uk/"> cycling.data.tfl.gov.uk</a>, with full access granted to the general public under these terms and conditions: <a href= "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service"> Transport Data Service </a>. <br />
 Individual data files contain transactions for a week’s period. 
-To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for transactional data processing and analysis such as **Python Pandas**. The Jupyter Notebook used for the following exercise can be found <a href="https://still-cleaning-it-up"> here </a>.<br />
+To calculate yearly statistics, the first step is to download these files and combine them all in one master dataset. We find that there are over 10 million rows (transactions) in our dataset, which requires advanced tools for transactional data processing and analysis such as **Python Pandas**. The Jupyter Notebook used for the following exercise can be found <a href="https://github.com/pgrugwiro/my-blog/blob/main/cycling_data.ipynb"> here </a>.<br />
 The figure below is a sneak peek of the data, showing the first 3 rows and the last 3 rows (data loaded in no particular chronological order), confirming that there were indeed 10,500,357 bike rentals in 2018. 
 <br />
 <br />
