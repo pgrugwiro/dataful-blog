@@ -28,6 +28,18 @@ baseurl: "/my-blog" # the subpath of your site, e.g. /blog
 url: "https://pgrugwiro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pgrgwr
 github_username:  pgrugwiro
+linkedin_username: pgrugwiro
+
+# Fields that minima uses but are not defaulted
+#I am the author, me, Phil G
+author: Phil G. R. 
+copyright: "Phil G.R."
+
+# title-logo does not come with minima
+# we add it to use it as a logo for the website... should be no taller than 50px hight
+
+title-logo: /images/title-logo.png
+
 
 # Build settings
 # Remove the minima theme because it'snow a regular theme
