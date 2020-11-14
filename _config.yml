@@ -38,7 +38,7 @@ copyright: "Phil G.R."
 # title-logo does not come with minima
 # we add it to use it as a logo for the website... should be no taller than 50px hight
 
-title-logo: /images/title-logo.png
+title-logo: 
 
 
 # Build settings
