@@ -30,7 +30,8 @@ twitter_username: pgrgwr
 github_username:  pgrugwiro
 
 # Build settings
-theme: minima
+# Remove the minima theme because it'snow a regular theme
+#theme: minima
 plugins:
   - jekyll-feed
 
