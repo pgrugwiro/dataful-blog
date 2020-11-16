@@ -14,11 +14,12 @@ layout: default
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
+        <img src="{{-post.image | relative_url -}}" alt="" class="blog-roll-image">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+           {{ post.title | escape }}
           </a>
         </h3>
         {%- if site.show_excerpts -%}
