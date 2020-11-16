@@ -22,7 +22,7 @@ The figure below is a sneak peek of the data, showing the first 3 rows and the l
 <br />
 <br />
 <p align="center">
-  <img width="600" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/headtail.PNG?raw=true">
+  <img width="600" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/headtail.PNG?raw=true">
 </p> 
 <br />
 <br />
@@ -42,7 +42,7 @@ Grouping and counting the rental Ids for each bike, we find that, **on average e
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalsperbike.png?raw=true">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/rentalsperbike.png?raw=true">
 </p> 
 <br /> 
 <br />
@@ -52,7 +52,7 @@ Perhaps we may be wondering how long is a bike ride each time a client picks it 
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalduration.png?raw=true">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/rentalduration.png?raw=true">
 </p> 
 <br />
 <br />
@@ -63,7 +63,7 @@ As a product manager, if you found that the bikes only get picked up 2 times per
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/idletime.png?raw=true">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/idletime.png?raw=true">
 </p> 
 <br />
 <br /> 
@@ -73,15 +73,15 @@ If you are a tourist, you may wonder what the most famous pick up and drop off l
 <br />
 <br />
 <p align="center">
-<img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/pickupstation.png?raw=true">
-<img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/dropoffstation.png?raw=true">
+<img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/pickupstation.png?raw=true">
+<img width="500" height="280" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/dropoffstation.png?raw=true">
 </p> 
 
 While we're on the topic of the most frequented pickup & drop off locations, it is worth noting that Hyde Park station has a longer bike rental duration compared to her counterparts. 
 <br />
 <br />
 <p align="center">
-<img width="500" height="480" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/Rplot.png?raw=true">
+<img width="500" height="480" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/Rplot.png?raw=true">
 </p> 
 
 <br />
@@ -92,7 +92,7 @@ As expected, the number of bike rentals starts to pick up in early spring as the
 <br />
 <br />
 <p align="center">
-<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/rentalmonthcount.png?raw=true">
+<img width="400" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/rentalmonthcount.png?raw=true">
 </p> 
 <br />
 <br /> 
