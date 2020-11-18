@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Storytelling with data. A minimalist Jekyll blog sharing the latest data 
   analysis and data science tech by use of real world business data. 
   
-#baseurl: "/my-blog" # the subpath of your site, e.g. /blog
+baseurl: "/my-blog" # the subpath of your site, e.g. /blog
 url: "http://dataful.blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pgrgwr
 github_username:  pgrugwiro
@@ -47,6 +47,8 @@ title-logo:
 plugins:
   - jekyll-feed
 
+
+permalink: pretty
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
