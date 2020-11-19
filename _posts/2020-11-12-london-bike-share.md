@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "London Bike Share"
+title:  "ADFS: London Bike Share"
 date:   2020-11-12 19:50:22 +0000
 categories: jekyll update
 image: /assets/feature_images/post1.png
+permalink: /:title:output_ext
 ---
 
 
