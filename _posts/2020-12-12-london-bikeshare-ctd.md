@@ -33,516 +33,255 @@ Preview of the weather data:
 <table class=" lightable-classic-2 table" style="font-family: Arial; size = 2; width: 100% !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 
 <thead>
-
 <tr>
-
-
 <th style="text-align:left;">
-
 Time
-
 </th>
-
 <th style="text-align:left;">
-
 Temp
-
 </th>
-
 <th style="text-align:left;">
-
 Rel Temp
-
 </th>
-
 <th style="text-align:left;">
-
 Wind
-
 </th>
-
 <th style="text-align:left;">
-
 Wind.Gust
-
 </th>
-
 <th style="text-align:left;">
-
 Rel Hum
-
 </th>
-
 <th style="text-align:left;">
-
 Dew.Point
-
 </th>
-
 <th style="text-align:left;">
-
 Pressure
-
 </th>
-
 <th style="text-align:left;">
-
 Icon
-
 </th>
-
 <th style="text-align:left;">
-
 Description
-
 </th>
-
 <th style="text-align:left;">
-
 Date
-
 </th>
-
 </tr>
-
 </thead>
-
 <tbody>
-
 <tr>
-
-
 <td style="text-align:left;">
-
 21:20
-
 </td>
-
 <td style="text-align:left;">
-
 10°C
-
 </td>
-
 <td style="text-align:left;">
-
 8°C
-
 </td>
-
 <td style="text-align:left;">
-
 280°17 Km/h
-
 </td>
-
 <td style="text-align:left;">
-
 N/A
-
 </td>
-
 <td style="text-align:left;">
-
 71%
-
 </td>
-
 <td style="text-align:left;">
-
 5°C
-
 </td>
-
 <td style="text-align:left;">
-
 1035.0mb
-
 </td>
-
 <td style="text-align:left;">
-
 NA
-
 </td>
-
 <td style="text-align:left;">
-
 Cloudy at 670m
-
 </td>
-
 <td style="text-align:left;">
-
 2018-12-31
-
 </td>
-
 </tr>
-
 <tr>
-
-
-
 <td style="text-align:left;">
-
 21:50
-
 </td>
-
 <td style="text-align:left;">
-
 10°C
-
 </td>
-
 <td style="text-align:left;">
-
 8°C
-
 </td>
-
 <td style="text-align:left;">
-
 290°19 Km/h
-
 </td>
-
 <td style="text-align:left;">
-
 N/A
-
 </td>
-
 <td style="text-align:left;">
-
 71%
-
 </td>
-
 <td style="text-align:left;">
-
 5°C
-
 </td>
-
 <td style="text-align:left;">
-
 1034.0mb
-
 </td>
-
 <td style="text-align:left;">
-
 NA
-
 </td>
-
 <td style="text-align:left;">
-
 Cloudy at 670m
-
 </td>
-
 <td style="text-align:left;">
-
 2018-12-31
-
 </td>
-
 </tr>
-
 <tr>
-
-
-
 <td style="text-align:left;">
-
 22:20
-
 </td>
-
 <td style="text-align:left;">
-
 10°C
-
 </td>
-
 <td style="text-align:left;">
-
 8°C
-
 </td>
-
 <td style="text-align:left;">
-
 280°17 Km/h
-
 </td>
-
 <td style="text-align:left;">
-
 N/A
-
 </td>
-
 <td style="text-align:left;">
-
 71%
-
 </td>
-
 <td style="text-align:left;">
-
 5°C
-
 </td>
-
 <td style="text-align:left;">
-
 1034.0mb
-
 </td>
-
 <td style="text-align:left;">
-
 NA
-
 </td>
-
 <td style="text-align:left;">
-
 Cloudy at 640m
-
 </td>
-
 <td style="text-align:left;">
-
 2018-12-31
-
 </td>
-
 </tr>
-
 <tr>
-
-
-
 <td style="text-align:left;">
-
 22:50
-
 </td>
-
 <td style="text-align:left;">
-
 9Â°C
-
 </td>
-
 <td style="text-align:left;">
-
 6°C
-
 </td>
-
 <td style="text-align:left;">
-
 280°17 Km/h
-
 </td>
-
 <td style="text-align:left;">
-
 N/A
-
 </td>
-
 <td style="text-align:left;">
-
 76%
-
 </td>
-
 <td style="text-align:left;">
-
 5°C
-
 </td>
-
 <td style="text-align:left;">
-
 1034.0mb
-
 </td>
-
 <td style="text-align:left;">
-
 NA
-
 </td>
-
 <td style="text-align:left;">
-
 Cloudy at 640m
-
 </td>
-
 <td style="text-align:left;">
-
 2018-12-31
-
 </td>
-
 </tr>
-
 <tr>
-
-
-
 <td style="text-align:left;">
-
 23:20
-
 </td>
-
 <td style="text-align:left;">
-
 10°C
-
 </td>
-
 <td style="text-align:left;">
-
 8°C
-
 </td>
-
 <td style="text-align:left;">
-
 290°19 Km/h
-
 </td>
-
 <td style="text-align:left;">
-
 N/A
-
 </td>
-
 <td style="text-align:left;">
-
 71%
-
 </td>
-
 <td style="text-align:left;">
-
 5°C
-
 </td>
-
 <td style="text-align:left;">
-
 1034.0mb
-
 </td>
-
 <td style="text-align:left;">
-
 NA
-
 </td>
-
 <td style="text-align:left;">
-
 Cloudy at 640m
-
 </td>
-
 <td style="text-align:left;">
-
 2018-12-31
-
 </td>
-
 </tr>
-
 <tr>
-
-
 <td style="text-align:left;">
-
 23:50
-
 </td>
-
 <td style="text-align:left;">
-
 9°C
-
 </td>
-
 <td style="text-align:left;">
-
 6°C
-
 </td>
-
 <td style="text-align:left;">
-
 280°17 Km/h
-
 </td>
-
 <td style="text-align:left;">
-
 N/A
-
 </td>
-
 <td style="text-align:left;">
-
 76%
-
 </td>
-
 <td style="text-align:left;">
-
 5°C
-
 </td>
-
 <td style="text-align:left;">
-
 1034.0mb
-
 </td>
-
 <td style="text-align:left;">
-
 NA
-
 </td>
-
 <td style="text-align:left;">
-
 Cloudy at 640m
-
 </td>
-
 <td style="text-align:left;">
-
 2018-12-31
-
 </td>
-
 </tr>
-
 </tbody>
-
 </table>
-
 </font>
 
 The dataframe structure and variable data types as extracted from the
@@ -1612,15 +1351,7 @@ fit_lm <- glm(Rentals.Num ~ Temperature + Wind +
 summary(fit_lm)
 ```
 
-    ## 
-    ## Call:
-    ## glm(formula = Rentals.Num ~ Temperature + Wind + Rel..humidity + 
-    ##     Pressure, family = quasipoisson, data = train_set)
-    ## 
-    ## Deviance Residuals: 
-    ##     Min       1Q   Median       3Q      Max  
-    ## -39.579  -17.974   -6.507    6.338   68.656  
-    ## 
+    
     ## Coefficients:
     ##                Estimate Std. Error t value Pr(>|t|)    
     ## (Intercept)   -0.961727   1.594252  -0.603    0.546    
@@ -1629,9 +1360,6 @@ summary(fit_lm)
     ## Rel..humidity -1.767641   0.103741 -17.039  < 2e-16 ***
     ## Pressure       0.007719   0.001541   5.009 5.65e-07 ***
     ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    ## 
-    ## (Dispersion parameter for quasipoisson family taken to be 455.8542)
     ## 
     ##     Null deviance: 2664777  on 5074  degrees of freedom
     ## Residual deviance: 1956992  on 5070  degrees of freedom
