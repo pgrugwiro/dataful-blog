@@ -1,6 +1,6 @@
 ---
+layout: post
 title: 'ADFS: London Bike Share Cntd'
-author: "Phil G Rugwiro"
 date: 2020-12-12 19:50:22 +0000
 always_allow_html: TRUE
 output:
@@ -8,11 +8,9 @@ output:
     variant: gfm
     preserve_yaml: TRUE
 categories: jekyll update
-image: /assets/feature_images/post2.png
+image: /assets/feature_images/post2.jpg
 permalink: /:title:output_ext
 ---
-
-#### **Intro and data**
 
 In the <a href="https://dataful.blog/london-bike-share.html"> previous post </a>, we were able to uncover useful insights from the
 London Bike Sharing programme. We learned that in 2018 there were 10.3
@@ -1972,5 +1970,5 @@ hope you enjoyed reading these posts. Write me\!
 
 <p style="font-size:12px"> 
 This blog post and the contents therein are for educational purposes and should not be used to drive any business decisions or profit making. <br /> 
-Weather image: From weather.com <br />
+Weather image: iStock/Getty Images Plus/Composite <br />
 Contains OS data © Crown copyright and database rights 2016' and Geomni UK Map data © and database rights [2020]</p>
