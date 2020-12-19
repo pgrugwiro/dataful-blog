@@ -97,7 +97,7 @@ As expected, the number of bike rentals starts to pick up in early spring as the
 <br /> 
 
 #### **Does the weather affect the number of bikes rented?**
-Since the number of bike rentals begins to pick up in early spring, can we say that the weather has a strong impact on the number of bicycles rented? **In the next blog post**, we will analyze the hourly weather for the city of London in 2018 and determine if there was a direct correlation between the weather conditions and the number of bikes rented. 
+Since the number of bike rentals begins to pick up in early spring, can we say that the weather has a strong impact on the number of bicycles rented? <a href = "https://dataful.blog/london-bikeshare-ctd.html"> **In the next blog post** </a>, we will analyze the hourly weather for the city of London in 2018 and determine if there was a direct correlation between the weather conditions and the number of bikes rented. 
 **See you next time**. 
 <br />
 <br /> 

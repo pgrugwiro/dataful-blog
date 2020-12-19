@@ -57,6 +57,7 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 # exclude:
+  
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -67,3 +68,13 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+exclude:
+  - "*.Rmd"
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - "*.Rproj"
+  - rmd_config.R
+  - cycling_data.ipynb
