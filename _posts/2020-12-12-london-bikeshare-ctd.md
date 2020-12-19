@@ -1964,7 +1964,8 @@ prior day and achieve a better accuracy than our weather-based models.
 Nevertheless, this was an interesting exercise on the application of
 predictive models on a real world business dataset joined with a natural
 phenomenon such as weather. You can find the Rmd file for this post
-here. I certainly enjoyed scraping, cleaning, and analyzing this data. I
+<a href = "https://github.com/pgrugwiro/dataful-blog/blob/main/rmd_files/2020-12-12-london-bikeshare-ctd.Rmd"> here </a>.
+ I certainly enjoyed scraping, cleaning, and analyzing this data. I
 hope you enjoyed reading these posts. Write me\!
 
 
