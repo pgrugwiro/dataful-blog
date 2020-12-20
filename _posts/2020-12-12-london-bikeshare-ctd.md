@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'ADFS: London Bike Share Cntd'
+title: 'ADFS: Weather vs. Bike Rentals'
 date: 2020-12-12 19:50:22 +0000
 always_allow_html: TRUE
 output:
@@ -28,7 +28,7 @@ city of London was retrieved from <https://freemeteo.co.uk/weather>.
 Preview of the weather data:
 
 <font size = "1">
-<table class=" lightable-classic-2 table" style="font-family: Arial; size = 2; width: 100% !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic-2" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto;">
 
 <thead>
 <tr>
@@ -313,8 +313,9 @@ prepare the data:
 
 Preview of the cleaned data:
 
+
 <font size = "1">
-<table class=" lightable-classic-2 table" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic-2" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto;">
 
 <thead>
 
@@ -711,7 +712,7 @@ data can be aggregated to count the number of rentals in hourly
 intervals in 2018.
 
 <font size = "1">
-<table class=" lightable-classic-2 table" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic-2" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto;">
 
 <thead>
 
@@ -845,7 +846,7 @@ half of total rentals are considered.
 Joint Data Preview:
 
 <font size = "1">
-<table class=" lightable-classic-2 table" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic-2" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto;">
 
 <thead>
 
@@ -1332,6 +1333,7 @@ train_set <- joint_df %>% slice(-test_index)
 test_set <- joint_df %>% slice(test_index)
 ```
 <br>
+
 **1. Fitting a Linear Model**
 
 Recall that the rentals distribution in the dataset does not follow a
@@ -1441,7 +1443,7 @@ modeled as a continuous numerical variable in the algorithms below):
 
 <br>
 
-**2. Fitting the kNN model**
+**2. Fitting a k-NN Model**
 
 The k-NN (k-nearest neighbors) performs the training for a given
 datapoint using the points that are most similar to it (neighbors).
@@ -1527,7 +1529,8 @@ The k-NN model, although it presents an improvement over the linear
 model, is still off by a lot\!
 
 <br>
-**3. Fitting the Decision Trees Model**
+
+**3. Fitting a Decision Trees Model**
 
 Decision trees (regression trees in our example) is another simple and
 popular machine learning algorithm that is used to predict outcomes
@@ -1632,7 +1635,7 @@ Another slight improvement is observed by using the decision
 (regression) trees algorithm. However, the numbers are still not
 satisfactory (which is expected).
 
-**4. Random Forests**
+**4. Fitting a Random Forests Model**
 
 Finally, let’s consider the performance of the random forests algorithm
 compared to the previous three. The algorithm essentially operates by
