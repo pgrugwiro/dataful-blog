@@ -35,9 +35,9 @@ the weight as a function of diet and age. In this example, our outcome,
 weight, is a continuous variable and the two independent variables are
 diet and age. Diet is a categorical variable, while age is a continuous
 variable. In this scenario, ANCOVA is used to determine the function:
-<div>
-$$weight = f(diet, age)$$
-</div> 
+<p style = "text-align: center">
+<i>weight = f(diet, age)</i>
+</p> 
 
 The linear model seeks to establish a
 relationship between the response variable (or outcome) and the
@@ -45,6 +45,7 @@ independent variables (or inputs). A model that can describe this
 relationship could potentially be used to make accurate data driven
 decisions and to predict outcomes.
 
+<br>
 #### **ANCOVA in Practice**
 
 This morning, as I was catching up with my mother, who is currently
@@ -289,6 +290,7 @@ they are statistically significant.
 
 <img src="/rmd_images/2021-01-16-analysis-of-covariance/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
+<br>
 #### **Running ANCOVA in R**
 
 Running ANCOVA in R is very simple and straightforward.
@@ -329,7 +331,8 @@ summary(ancova_model)
     ## Multiple R-squared:  0.7453, Adjusted R-squared:  0.7435 
     ## F-statistic: 419.2 on 4 and 573 DF,  p-value: < 2.2e-16
 
-#### Model interpretation:
+<br>
+#### **Model interpretation**
 
   - the low p\_value of 2.2e-16 indicates that the model itself is very
     significant.
@@ -356,17 +359,15 @@ row 5, the intercept for Diet 4 is 30.2335 + 10.9244 = 41.1579.
 
 All 4 graphs for diets share a common slope of 8.7505 shown on row 2.
 
-<div>
+<p style = "text-align: center">
 
-$$weight_{diet1} = 10.9244 + 8.7505 * Time$$
+<i>weight<sub>diet1</sub> = 10.9244 + 8.7505 * Time</i>
+<br><i>weight<sub>diet2</sub> = 27.0905 + 8.7505 * Time</i>
+<br><i>weight<sub>diet3</sub> = 47.4238 + 8.7505 * Time</i>
+<br><i>weight<sub>diet4</sub> = 41.1579 + 8.7505 * Time</i>
 
-$$weight_{diet2} = 27.0905 + 8.7505 * Time$$
+</p>
 
-$$weight_{diet3} = 47.4238 + 8.7505 * Time$$
-
-$$weight_{diet4} = 41.1579 + 8.7505 * Time$$
-
-</div>
 
 <img src="/rmd_images/2021-01-16-analysis-of-covariance/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
@@ -383,8 +384,9 @@ independent variables. Example, imagine if Diet 2 works better from day
 an interaction between the Diet variable and the Time variable. In our
 exercise, we assumed that no such interactions exist. However, R
 provides means to conduct analyses with interactions.
+<br>
 
-#### Predicting with the model
+#### **Predicting with the model**
 
 Our model above explains 75% of the variations. We can confidently use
 it to make predictions of the weight of chicks.
