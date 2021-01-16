@@ -21,7 +21,7 @@
 title: A Dataful Story
 email: pgrugwiro@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Storytelling with data. A minimalist Jekyll blog sharing the latest data 
+  Storytelling with data. A minimalist blog sharing the latest data 
   analysis and data science tech by use of real world business data. 
   
 # baseurl: "https://dataful.blog" # the subpath of your site, e.g. /blog
