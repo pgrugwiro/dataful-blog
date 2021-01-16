@@ -402,10 +402,10 @@ weight average of all chicks on Diet 3 on day 12 and record that
 measurement for this new chick. This would be:
 
 ``` r
-mean(ChickWeight[ChickWeight$Time == 12,]$weight)
+mean(ChickWeight[ChickWeight$Time == 12 & ChickWeight$Diet == '3',]$weight)
 ```
 
-    129.2449 grams. 
+    144.4 grams. 
 
 
 
@@ -418,12 +418,12 @@ predict(ancova_model, new_chick)
 ```
 
 ``` 
-152.4297 grams.  
+152.4 grams.  
 ```
 
 
 
-We are likely to be more accurate by using the model estimate than
+Even though the numbers are within close range, we are likely to be more accurate by using the model estimate than
 average measurement.
 
 As I write this, my mother is in good spirits, she’s determined to fight
