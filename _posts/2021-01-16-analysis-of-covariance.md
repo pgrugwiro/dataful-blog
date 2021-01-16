@@ -8,7 +8,7 @@ output:
     variant: gfm
     preserve_yaml: TRUE
 categories: jekyll update
-image: /assets/feature_images/post3.png
+image: /assets/feature_images/post3.jpeg
 permalink: /:title:output_ext
 ---
 
