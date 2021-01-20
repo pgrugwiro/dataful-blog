@@ -138,7 +138,7 @@ One acceptable way would be to estimate the weight average of all chicks on Diet
 This would be: 
 
 ```{r comment = NA}
-mean(ChickWeight[ChickWeight$Time == 12,]$weight)
+mean(ChickWeight[ChickWeight$Time == 12 & ChickWeight$Diet == '3',]$weight)
 ```
 129 grams.
 

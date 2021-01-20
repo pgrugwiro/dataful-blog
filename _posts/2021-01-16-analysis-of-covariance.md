@@ -371,7 +371,7 @@ All 4 graphs for diets share a common slope of 8.7505 shown on row 2.
 
 <img src="/rmd_images/2021-01-16-analysis-of-covariance/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
-There we have it. My nephew will be advised to use Diet 4 for his
+There we have it. My nephew will be advised to use Diet 3 for his
 chickenfeed.
 
 This is a simplified version of ANCOVA in R. In this example, we only
