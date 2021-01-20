@@ -2,7 +2,7 @@
 layout: post
 title: "ADFS: AWS Solutions Architect Associate Certification"
 author: "Phil G Rugwiro"
-date: "2021-01-20 22:50:22 +0000"
+date: 2021-01-20 20:50:22 +0000
 output:
   md_document:
     variant: gfm
@@ -10,9 +10,13 @@ output:
   html_document:
     df_print: paged
 always_allow_html: yes
+
+categories: jekyll update
+image: /assets/feature_images/post4.jpg
+permalink: /:title:output_ext
 ---
 
-#### Background
+#### **Background**
 
 I set a few challenging goals for myself this year. One of them is to
 pass the AWS Data Analytics - Specialty certification.
@@ -36,7 +40,7 @@ operationally excellent manner.
 I decided that I must have the SAA certification before attempting the
 DA specialty certification.
 
-#### Learning Journey
+#### **Learning Journey**
 
 Ryan Kroonenburg from acloudguru was my instructor. His course is really
 a must take for all looking to gain practical knowledge of AWS. He
@@ -56,7 +60,7 @@ time (and some money) in the AWS Console, practicing everything I had
 learned, particularly, really nailing the design of VPCs and
 multi-tiered architectures.
 
-#### Exam Practice
+#### **Exam Practice**
 
 For exam practice, there is no other place to go except Whizlabs. Their
 SAA package contains 7 full fledged Practice Tests that mirror the
@@ -76,20 +80,24 @@ questions. When reviewing the test report, if there are labs associated
 to a given question, a link will be provided and one can complete the
 lab to gain even more practical experience on that topic in question. I
 highly recommend these labs.
-
+<br>
+<br>
 <p align="center">
-  <img width="600" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/headtail.PNG?raw=true">
+  <img width="600" height="80" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post4/whizlabs.PNG">
 </p> 
-
+<br>
+<br>
 To visualize my areas of weakness, I aggregated my practice test scores,
 for the first take and retake, grouped in all the main domains of the
 AWS Cloud Infrastructure: Design High Performing Architectures, Design
 Resilient Architectures, Design Cost-optimized Architectures, and Design
 Secure Applications and Architectures. This is a dataful story after
 all.
+<br>
 
 Data Preview:
 
+<font size = "1">
 <table class=" lightable-classic-2 table" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 
 <thead>
@@ -381,6 +389,7 @@ Design Resilient Architectures
 </tbody>
 
 </table>
+</font>
 
 I must admit that the practice tests made me really humble. From the
 graph below, the average score across all 7 test for the first try is
@@ -389,14 +398,20 @@ second try after a careful review of all answers and I still didn’t
 manage to get the maximum score. I must however admit that time
 constraints that I put on myself played a role in the poor performance.
 
-<img src="aws_saa_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+<br>
+<br>
+
+<img src="/rmd_images/aws_saa/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 My performance was balanced across all domains of the AWS Cloud
 Infrastructure. No area stood out as significantly different from the
-rest.
+rest as seen in the graph below.
 
-<img src="aws_saa_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<br>
+<br>
 
-#### Exam day
+<img src="/rmd_images/aws_saa/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+
+#### **Exam day**
 
 I went into the exam, well prepared and very confident. I took my time
 and read all questions carefully. I gained even more confidence as the
@@ -406,16 +421,19 @@ the end of 140 minutes.
 
 
 <p align="center">
-  <img width="600" height="300" src="https://github.com/pgrugwiro/my-blog/blob/main/_images/_post1/headtail.PNG?raw=true">
+  <img width="300" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post4/aws.PNG">
 </p> 
 
 
-#### Next steps
+#### **Next steps**
 
 Now I feel ready to take on the Data Analytics Specialty Certification.
 If you have any good resources beyond AWS Documentation that might help
 accelerate my learning, please kindly share them with me. I hope to
 write a follow up post by the end of the year, reporting on the
 successful completion of this goal.
+
+<br>
+<br>
 
 ### NEVER. STOP. LEARNING.
