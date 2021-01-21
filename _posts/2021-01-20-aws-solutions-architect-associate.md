@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "ADFS: AWS Solutions Architect Associate Certification"
-author: "Phil G Rugwiro"
 date: 2021-01-20 20:50:22 +0000
 output:
   md_document:
