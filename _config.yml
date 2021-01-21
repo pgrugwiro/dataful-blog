@@ -87,3 +87,5 @@ url: "https://dataful.blog" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+ 
+ google_analytics: G-HBVX17JC7E
