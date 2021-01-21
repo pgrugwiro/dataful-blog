@@ -3,6 +3,16 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBVX17JC7E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HBVX17JC7E');
+</script>
+
   <header class="post-header">
     <img src="{{- page.image | relative_url -}}" alt="" class="featured-image-post">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
