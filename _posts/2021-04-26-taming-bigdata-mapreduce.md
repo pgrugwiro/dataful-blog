@@ -76,45 +76,62 @@ This block of data is a bit challenging to make sense of. I won’t bore
 you with the details … you see what I mean. What a mess! Oh darn it, I did it too!
 
 <p align="center">
-  <img width="600" height="80" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post4/whizlabs.PNG">
-
+  <img width="400" height="400" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map1.PNG">
+</p> 
+<br>
 So let’s send a Map function (mapper) to this block of data. What the
 mapper is simply going to do, is to rearrange this block of data in some
 fashion. Remember how we said earlier that the input to the mapper is in
-the form of key:value pairs? Well, in this case the input pairs to the
-mapper are piles:shoes. And the output from the mapper are also in the
-form of key:value pairs after some kind of arrangement. In this example,
+the form of {*key:value*} pairs? Well, in this case the input pairs to the
+mapper are {*piles:shoes*}. And the output from the mapper are also in the
+form of {*key:value*} pairs after some kind of arrangement. In this example,
 the arrangement is simply identifying each individual shoe and setting
-it aside. So, the output will be shoetype:1. Well, that’s about it.
+it aside. So, the output will be **{*shoetype:1*}**. Well, that’s about it.
 That’s all we want the mapper to do. Identify a shoe and set it aside.
-The mapper will complete the same task on all the other 9999 piles:shoes
+The mapper will complete the same task on all the other 9999 {*piles:shoes*}
 in the distributed file system.
 
-This is still not enough. Still difficult to make sense of. Again, for
-reason I won’t bother explaining. We would like to know how many shoes
-of each type there are. (In our example, there should be 2 shoes of each
-type). This is where the Reduce function (reducer) comes in. Before the
+<p align="center">
+  <img width="400" height="400" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map2.PNG">
+</p> 
+<br>
+
+This is still not enough. Still difficult to make sense of... again, for
+reason I won’t bother explaining. <br><br>We would like to know how many shoes
+of each type there are. (In our simple example, there should be 2 shoes of each
+type, unless for some reason a squirrel broke into our flat and stole some shoes). 
+This is where the Reduce function (reducer) comes in. Before the
 reducer does the aggregation for us, the MapReduce framework will
 complete some shuffle and sort magic behind the scene for us, collecting
 shoetypes that are similar from all the different piles of shoes and
-putting them together, side by side. The input to the reducer is a
-key:value pair of the form shoetype:(1,1). The output of the reducer is
+putting them together, side by side. The input to the reducer are
+{*key:value*} pair of the form **{*shoetype:(1,1)*}**. The output of the reducer is
 whatever information we want to generate from the input. Let’s say that
 for example we want to sum up how many shoes there are for each type,
-then our output would be shoetype:(1+1), or shoetype:2.
+then our output would be **{*shoetype:(1+1)*}**, or **{*shoetype:2*}**.
+
+<p align="center">
+  <img width="400" height="400" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/agg1.PNG">
+</p> 
+<br>
 
 We could also be interested in finding out what different categories of
-shoes there are in our piles:shoes (e.g., pumps, flats, sneakers, etc.),
+shoes there are in our {*piles:shoes*} (e.g., pumps, flats, sneakers, etc.),
 assuming that they are properly labelled. In that case, we could write a
 second mapper that takes these sorted pairs as input, arranges them in
 their proper categories, and the reducer will carry out the aggregation,
 allowing to know how many individual categories there are, how big each
-category is, etc… How simple was that?
+category is (see image below), etc… **How simple was that?**
 
+
+<p align="center">
+  <img width="400" height="600" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/agg2.PNG">
+</p> 
+<br>
 The beauty of MapReduce, which is shared by many other common data
-analysis tools, is that it is simple enough that it can be picked up by
-just about anyone in a data analysis space and does not require advanced
-programming knowledge. It’s a low code tool.
+analysis tools, is that it is **simple enough** that it can be picked up by
+just about **anyone in the data analysis community** and does not require advanced
+programming knowledge. **It’s a low code tool**.
 
 #### **MapReduce – How’s that Really?**
 
@@ -129,18 +146,18 @@ estimated energy bills and manual meter readings. Smart meters allow the
 consumer to better understand their energy usage and become more energy
 efficient. With smart meters, the supplier can monitor consumption in
 real time, respond quicker to outages, and determine better pricing
-models among other things. The data collected by millions of smart
+models among other things. I guess all I'm trying to say is "get one of those!"
+<br><br>The data collected by millions of smart
 meters at small time intervals can grow quickly and daily. The
 aggregation and analysis of this big data requires advanced data
 analytic tools and high-performance computational frameworks such as
 Hadoop and MapReduce. In this short example, we will use data from 95
 households. These households belong to various economic backgrounds
 categorised as Adversity (this is probably where I belong), Comfortable
-(I hope this is where you belong), and Affluent (the Earl of
-Hertfordshire definitely belongs here). A portion of the households was
-subjected to a variable tariff (67.2p/kWh, 11.76p/kWh, and 3.99p/kWh)
-whereby households were informed of the tariffs rates one day ahead. The
-rest of the households were on standard energy rates of 14.228p/kWh.
+(this is where I hope you belong), and Affluent (the Earl of
+Hertfordshire definitely belongs here... if you know him, give him my regards s'il vous plait). A portion of the households was subjected to a variable tariff (67.2p/kWh, 11.76p/kWh, and 3.99p/kWh)
+and households were informed of the tariffs rates one day ahead. The
+rest of the households were on standard rates of 14.228p/kWh.
 Usage readings were taken every 30 minutes. The dataset contains about 3
 million rows and looks like this:
 
@@ -176,7 +193,7 @@ kWhphh
 
 <th style="text-align:left;">
 
-Acorn\_grouped
+AcornGroup
 
 </th>
 
@@ -361,88 +378,127 @@ Comfortable
 </table>
 
 Let’s design a MapReduce program that aggregates energy usage data for
-each tariff type (standard and dynamic) and for each economic group
+each tariff type (standard and dynamic) and for each economic (acorn) group
 (affluent, comfortable, and adversity) and use other analysis tools to
-generate insights from the data. The MapReduce program begins with the
+generate insights from the data. <br><br>The MapReduce program begins with the
 user choosing a category of interest. The mapper will receive the
 document containing all the data (house number, tariff type, date and
 time, energy used, economic grouping) and will proceed by mapping the
 energy consumption to each datetime, forming a key value pair. The
 mapper will emit these key value pairs of datetime and energy
 consumption only for the category that matches the chosen category by
-the user. The reducer will receive key-values (list of values) pairs,
+the user. <br><br>The reducer will receive key-values (list of values) pairs,
 i.e., for each datetime, a list of energy consumptions in all households
-is provided. The reducer will then aggregate these values according to
+is provided (Recall shoetype:(1,1)? Yes, just like that.). The reducer will then aggregate these values according to
 the goal of the project, which in this project is to calculate the
 average per datetime. Finally, the reducer will emit key value pairs of
-datetime and average energy consumption. Pseudo code: choose category of
-interest (standard tariff, dynamic tariff, affluent homes, comfortable
-homes, adversity homes)
+datetime and average energy consumption. <br><br>
+**Pseudo code**: 
 
-class MAPPER method MAP(docid a, doc d) for all DateTime in doc d do
-EMIT(DateTime, kWhphh) class REDUCER method REDUCE(DateTime,
-list(kWhphh1, kWhphh2, kWhphh3, … kWhphhn)) total\_kWhphh = 0 count = 0
+<p align="center">
+  <img width="800" height="350" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/pseudo.PNG">
+</p> 
+<br>
 
-``` 
- for all kWhphh in list(kWhphh1, kWhphh2, kWhphh3, ... kWhphhn) do
-        total_kWhphh += kWhphh
-        count ++
-    avg_kWhphh = total_kWhphh/count
+**Actual code**: 
+<br>
 
-    EMIT(DateTime, avg_kWhphh)  
-```
+<p align="center">
+  <img width="600" height="500" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/mapper.PNG">
+</p> 
+<br>
 
-Actual code: MAPPER:
+<p align="center">
+  <img width="600" height="500" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/reducer.PNG">
+</p> 
+<br>
 
-REDUCER:
-
+In addition to writing a mapper and reducer, there's also a driver class that makes it all work.
 Writing MapReduce code in Java is simple but is as hard as writing
 MapReduce code gets. The same code can be written with much less effort
 in Python to accomplish the same tasks (I’ll spare you the boring
 details). I’ll also proceed by sparing you yet more boring details of
 how to create .jar files (basically, stuff like File + Save As… you know
-the drill).
+the drill) to create the final MapReduce app.
+<br><br>
 
-So, let’s run the program. Step 1. Start and confirm HDFS daemons are
-running (wait, but what are the HDFS daemons?? arghhhhh… well, net time
+So, let’s run the program. <br>
+
+Step 1. Start and confirm HDFS daemons are
+running (wait, but what are the HDFS daemons?? arghhhhh… well, next time
 maybe). For now, let’s just say that you’re setting up your distributed
 file system. Remember those 10000 PCs we talked about earlier? Yes,
 that. You’re waking them up, getting them ready for work.
 
+<p align="center">
+  <img width="400" height="100" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/jps.PNG">
+</p> 
+<br>
+
 Step2. Create a directory in HDFS and upload data (your big data) to the
 directory. Then relax. The system you set up above will know how to spit
-it in smaller data and distribute it across your clusters.
+it in smaller data and distribute it across the clusters.
 
-Step 3. Run the MapReduce program: This program is aggregating data for
+<p align="center">
+  <img width="400" height="50" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/upload.PNG">
+</p> 
+<br>
+Step 3. Run the MapReduce program: This particular program is aggregating data for
 the Acorn type “Comfortable”.
 
-Step 4. View data on HDFS:
+<p align="center">
+  <img width="400" height="30" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/run.PNG">
+</p> 
+<br>
 
-Step 5. Download aggregated data from HDFS to local disk for further
+Step 4. You can view data in HDFS:
+
+<p align="center">
+  <img width="400" height="130" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/viewdata.PNG">
+</p> 
+<br>
+
+Step 5. And finally, download aggregated data from HDFS to local disk for further
 analysis.
 
-Boom\! That’s it. With just a few keystrokes, you have tamed big data\!
+**Boom\!** That’s it. With just a few keystrokes, you have tamed big data\!<br>
 The ever-growing size of data requires novel and powerful data analysis
-tools to gain real time insight from the data. MapReduce programming
+tools to gain real time insights. MapReduce programming
 makes it possible to perform calculations, from the basic calculations
 such as mean, max to more advanced calculations, on large-scale data
 that is distributed on many independent computing nodes while
-maintaining a high level of efficiency and fault tolerance. Be it 1TB be
-it 10PB, it’s yours to own and dominate, thanks to the powerful data
-tech available to us and for free\!
+maintaining a high level of efficiency and fault tolerance. Be it 1TB, be
+it 10PB, data’s yours to own and dominate, thanks to the powerful data
+tech available to us\!
 
 Anywhoo… I had time today so I went ahead and did some analysis on this
-aggregated data. Enjoy. Energy use by Tariff type As the graphs below
+aggregated data. Enjoy. <br><br>
+
+**Energy use by Tariff type** <br> As the graphs below
 show, the households on standard tariff consume on average more energy
 compared to the households on a dynamic time of use tariff throughout
 the day and over time.
 
-Energy use by Economic (Acorn) Category According to the graphs below,
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffdaily.png">
+</p> 
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffhourly.png">
+</p> 
+
+**Energy use by Economic (Acorn) Category** <br> According to the graphs below,
 the Affluent and Comfortable households use comparable amounts of energy
 throughout the day and over time, while Adversity households use
 significantly less energy throughout the day and over time.
 
-Energy use by Tariff type and Economic category Adversity households on
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/acorndaily.png">
+</p> 
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/acornhourly.png">
+</p> 
+
+**Energy use by Tariff type and Economic Category** <br> Adversity households on
 dynamic tariff use significantly less energy than those on regular flat
 rate tariffs. This indicates that they are very conscious about money
 spent on electricity would do whatever it takes to save.
