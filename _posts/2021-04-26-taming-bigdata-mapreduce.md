@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "ADFS: Taming Big Data with MapReduce"
-date: 2021-04-26 16:50:22 +0000
+title: 'ADFS: Taming Big Data with MapReduce'
+date: 2021-04-26 13:50:22 +0000
+always_allow_html: TRUE
 output:
   md_document:
     variant: gfm
-    preserve_yaml: yes
-      html_document:
-    df_print: paged
-always_allow_html: yes
-
+    preserve_yaml: TRUE
 categories: jekyll update
 image: /assets/feature_images/post5.jpg
 permalink: /:title:output_ext
@@ -24,15 +21,17 @@ technology to collect, transform, analyse, and present data that has
 soared to unprecedented levels and continues to be on the rise. Devices,
 algorithms, and apps are now collecting data about us people, other
 living and non-living organisms, systems, and processes, resulting in
-enormous volumes of data. Data comes in different shapes and forms. A
-common myth is the saying that “data is messy”. Data is not messy. Data
+enormous volumes of data. <br> <br>This data comes in different shapes and forms; 
+there is a common saying that “data is messy”. No, data is not messy. Data
 just is. (Okay, I suppose you can say that I am with the “is” school of
 thought). However, if one is using the wrong data for a certain purpose,
 or the wrong tool for a certain data, then it can get pretty messy
-pretty quick. Along with the rise of data collection technologies, is
+pretty quick. <br><br>Along with the rise of data collection technologies, is
 the rise of data analysis technologies capable of handling such volumes
 of data. One such technology and the main topic of this post is
-MapReduce.
+**MapReduce**. 
+<br>
+<br>
 
 #### **MapReduce – What’s that?**
 
@@ -50,12 +49,14 @@ data into 10000 partitions and store each partition on its own PC; each
 of the 10000 PCs would only store 100MB of data (Think Hadoop
 Distributed File System, or HDFS). Attempting to analyse 100MB is a
 simple task that takes no time (Think MapReduce). Beautiful\!
+<br>
+<br>
 
 #### **MapReduce – How’s that?**
 
 The two main components of MapReduce are, as the
 name suggests, Map and Reduce. The Map function takes input data from
-storage in the form of {key:value} pairs, processes the data (or
+storage (small block of data) in the form of {key:value} pairs, processes the data (or
 rearranges it in some elegant way), and produces an intermediate output
 also in the form of {key:value} pairs. The Reduce function takes Map
 function’s output as input, processes the data, and produces the final
@@ -63,8 +64,8 @@ output, once again, in the form of {key:value} pairs. The data analyst
 defines both the map and reduce functions according to the computational
 objectives.
 
-Well, that was a lot of blah blah blah meeh. Let’s use a portion of my
-partner’s shoe collection to show how MapReduce really works.
+Well, that was a lot of blah blah blah meeh...meehhhh. <br> <br> Let’s use a portion of my
+partner’s **shoe collection** to show how MapReduce **really works**.
 
 It begins with one pile of shoes, which we will refer to as one block of
 data. Now just imagine there exists another 9999 piles of shoes (blocks
@@ -72,7 +73,10 @@ of data) somewhere in our various abodes around the world (the
 distributed file system).
 
 This block of data is a bit challenging to make sense of. I won’t bore
-you with the details … you see what I mean.
+you with the details … you see what I mean. What a mess! Oh darn it, I did it too!
+
+<p align="center">
+  <img width="600" height="80" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post4/whizlabs.PNG">
 
 So let’s send a Map function (mapper) to this block of data. What the
 mapper is simply going to do, is to rearrange this block of data in some
