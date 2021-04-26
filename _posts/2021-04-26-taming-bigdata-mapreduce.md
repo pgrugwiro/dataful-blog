@@ -104,8 +104,8 @@ This is where the Reduce function (reducer) comes in. Before the
 reducer does the aggregation for us, the MapReduce framework will
 complete some shuffle and sort magic behind the scene for us, collecting
 shoetypes that are similar from all the different piles of shoes and
-putting them together, side by side. The input to the reducer are
-{*key:value*} pair of the form **{*shoetype:(1,1)*}**. The output of the reducer is
+putting them together, side by side. The input to the reducer will therefore be
+{*key:value*} pairs of the form **{*shoetype:(1,1)*}**. The output of the reducer is
 whatever information we want to generate from the input. Let’s say that
 for example we want to sum up how many shoes there are for each type,
 then our output would be **{*shoetype:(1+1)*}**, or **{*shoetype:2*}**.
@@ -132,7 +132,8 @@ The beauty of MapReduce, which is shared by many other common data
 analysis tools, is that it is **simple enough** that it can be picked up by
 just about **anyone in the data analysis community** and does not require advanced
 programming knowledge. **It’s a low code tool**.
-
+<br>
+<br>
 #### **MapReduce – How’s that Really?**
 
 Let’s see some MapReduce in action. We will write a mapper and reducer
@@ -155,7 +156,7 @@ Hadoop and MapReduce. In this short example, we will use data from 95
 households. These households belong to various economic backgrounds
 categorised as Adversity (this is probably where I belong), Comfortable
 (this is where I hope you belong), and Affluent (the Earl of
-Hertfordshire definitely belongs here... if you know him, give him my regards s'il vous plait). A portion of the households was subjected to a variable tariff (67.2p/kWh, 11.76p/kWh, and 3.99p/kWh)
+Hertfordshire definitely belongs here... if you know him, give him my regards s'il vous plait). A portion of the households were subjected to a variable tariff (67.2p/kWh, 11.76p/kWh, and 3.99p/kWh)
 and households were informed of the tariffs rates one day ahead. The
 rest of the households were on standard rates of 14.228p/kWh.
 Usage readings were taken every 30 minutes. The dataset contains about 3
@@ -379,8 +380,7 @@ Comfortable
 
 Let’s design a MapReduce program that aggregates energy usage data for
 each tariff type (standard and dynamic) and for each economic (acorn) group
-(affluent, comfortable, and adversity) and use other analysis tools to
-generate insights from the data. <br><br>The MapReduce program begins with the
+(affluent, comfortable, and adversity) by time. <br><br>The MapReduce program begins with the
 user choosing a category of interest. The mapper will receive the
 document containing all the data (house number, tariff type, date and
 time, energy used, economic grouping) and will proceed by mapping the
@@ -389,7 +389,7 @@ mapper will emit these key value pairs of datetime and energy
 consumption only for the category that matches the chosen category by
 the user. <br><br>The reducer will receive key-values (list of values) pairs,
 i.e., for each datetime, a list of energy consumptions in all households
-is provided (Recall shoetype:(1,1)? Yes, just like that.). The reducer will then aggregate these values according to
+is provided **(**Recall shoetype:(1,1)? Yes, just like that.**)**. The reducer will then aggregate these values according to
 the goal of the project, which in this project is to calculate the
 average per datetime. Finally, the reducer will emit key value pairs of
 datetime and average energy consumption. <br><br>
@@ -461,7 +461,7 @@ Step 4. You can view data in HDFS:
 Step 5. And finally, download aggregated data from HDFS to local disk for further
 analysis.
 
-**Boom\!** That’s it. With just a few keystrokes, you have tamed big data\!<br>
+**Boom\!** That’s it. With just a few keystrokes, you have tamed big data\!<br><br>
 The ever-growing size of data requires novel and powerful data analysis
 tools to gain real time insights. MapReduce programming
 makes it possible to perform calculations, from the basic calculations
@@ -472,7 +472,7 @@ it 10PB, data’s yours to own and dominate, thanks to the powerful data
 tech available to us\!
 
 Anywhoo… I had time today so I went ahead and did some analysis on this
-aggregated data. Enjoy. <br><br>
+aggregated data above. Enjoy. <br><br>
 
 **Energy use by Tariff type** <br> As the graphs below
 show, the households on standard tariff consume on average more energy
@@ -503,13 +503,31 @@ dynamic tariff use significantly less energy than those on regular flat
 rate tariffs. This indicates that they are very conscious about money
 spent on electricity would do whatever it takes to save.
 
+<p align="center">
+  <img width="600" height="280" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecoadversity.PNG">
+</p> 
+
 Households in comfortable category on dynamic tariff use more energy in
 comparison to those on flat rate tariff. This indicates that middle
 class people are lenient in changing their energy usage habits even when
 provided with opportunities to save.
+
+<p align="center">
+  <img width="600" height="280" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecocomfortable.PNG">
+</p> 
 
 Households categorised as affluent who are on dynamic tariff use
 slightly less energy in comparison to those on standard flat rate
 tariff. This is an interesting finding, indicating that the richest
 households would tend to be more frugal in their energy usage when
 alerted about the prices ahead of time.
+
+<p align="center">
+  <img width="600" height="280" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecoaffluent.PNG">
+</p> 
+
+Data source: London Data Store
+
+So, what will you use MapReduce to do?
+
+#### NEVER.STOP.LEARNING
