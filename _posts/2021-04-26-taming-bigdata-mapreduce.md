@@ -76,7 +76,7 @@ This block of data is a bit challenging to make sense of. I won’t bore
 you with the details … you see what I mean. What a mess! Oh darn it, I did it too!
 
 <p align="center">
-  <img width="400" height="400" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map1.PNG">
+  <img width="300" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map1.PNG">
 </p> 
 <br>
 So let’s send a Map function (mapper) to this block of data. What the
@@ -92,7 +92,7 @@ The mapper will complete the same task on all the other 9999 {*piles:shoes*}
 in the distributed file system.
 
 <p align="center">
-  <img width="400" height="350" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map2.PNG">
+  <img width="300" height="250" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map2.PNG">
 </p> 
 <br>
 
@@ -111,7 +111,7 @@ for example we want to sum up how many shoes there are for each type,
 then our output would be **{*shoetype:(1+1)*}**, or **{*shoetype:2*}**.
 
 <p align="center">
-  <img width="400" height="400" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/agg1.PNG">
+  <img width="300" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/agg1.PNG">
 </p> 
 <br>
 
@@ -125,7 +125,7 @@ category is (see image below), etc… **How simple was that?**
 
 
 <p align="center">
-  <img width="400" height="600" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/agg2.PNG">
+  <img width="300" height="500" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/agg2.PNG">
 </p> 
 <br>
 The beauty of MapReduce, which is shared by many other common data
