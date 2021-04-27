@@ -12,7 +12,7 @@ image: /assets/feature_images/post5.jpg
 permalink: /:title:output_ext
 ---
 
-#### **Busting Myths**
+#### **Big Data Small Data**
 
 This is not the age of data. This is the age of data tech.
 Data itself (or themselves depending on your school of thought) is
