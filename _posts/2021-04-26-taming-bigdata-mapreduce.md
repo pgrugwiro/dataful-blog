@@ -12,7 +12,7 @@ image: /assets/feature_images/post5.jpg
 permalink: /:title:output_ext
 ---
 
-#### **Myth Busters**
+#### **Busting Myths**
 
 This is not the age of data. This is the age of data tech.
 Data itself (or themselves depending on your school of thought) is
@@ -92,7 +92,7 @@ The mapper will complete the same task on all the other 9999 {*piles:shoes*}
 in the distributed file system.
 
 <p align="center">
-  <img width="400" height="400" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map2.PNG">
+  <img width="400" height="350" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/map2.PNG">
 </p> 
 <br>
 
@@ -162,6 +162,7 @@ rest of the households were on standard rates of 14.228p/kWh.
 Usage readings were taken every 30 minutes. The dataset contains about 3
 million rows and looks like this:
 
+<font size = "1">
 <table class=" lightable-classic-2 table" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 
 <thead>
@@ -377,6 +378,7 @@ Comfortable
 </tbody>
 
 </table>
+</font>
 
 Let’s design a MapReduce program that aggregates energy usage data for
 each tariff type (standard and dynamic) and for each economic (acorn) group
@@ -396,7 +398,7 @@ datetime and average energy consumption. <br><br>
 **Pseudo code**: 
 
 <p align="center">
-  <img width="800" height="350" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/pseudo.PNG">
+  <img width="800" height="330" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/pseudo.PNG">
 </p> 
 <br>
 
@@ -404,14 +406,10 @@ datetime and average energy consumption. <br><br>
 <br>
 
 <p align="center">
-  <img width="600" height="500" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/mapper.PNG">
+  <img width="500" height="800" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/mapperreducer.PNG">
 </p> 
 <br>
 
-<p align="center">
-  <img width="600" height="500" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/reducer.PNG">
-</p> 
-<br>
 
 In addition to writing a mapper and reducer, there's also a driver class that makes it all work.
 Writing MapReduce code in Java is simple but is as hard as writing
@@ -504,7 +502,7 @@ rate tariffs. This indicates that they are very conscious about money
 spent on electricity would do whatever it takes to save.
 
 <p align="center">
-  <img width="600" height="280" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecoadversity.PNG">
+  <img width="600" height="230" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecoadversity.PNG">
 </p> 
 
 Households in comfortable category on dynamic tariff use more energy in
@@ -513,7 +511,7 @@ class people are lenient in changing their energy usage habits even when
 provided with opportunities to save.
 
 <p align="center">
-  <img width="600" height="280" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecocomfortable.PNG">
+  <img width="600" height="230" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecocomfortable.PNG">
 </p> 
 
 Households categorised as affluent who are on dynamic tariff use
@@ -523,7 +521,7 @@ households would tend to be more frugal in their energy usage when
 alerted about the prices ahead of time.
 
 <p align="center">
-  <img width="600" height="280" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecoaffluent.PNG">
+  <img width="600" height="230" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post5/tariffecoaffluent.PNG">
 </p> 
 
 Data source: London Data Store
