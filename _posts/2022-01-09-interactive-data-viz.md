@@ -1,12 +1,18 @@
 ---
-title: 'ADFS: Interactive Data Visualization'
-author: "Phil G Rugwiro"
-date: "1/8/2022"
-always_allow_html: TRUE
+layout: post
+title: "ADFS: Interactive Data Visualization"
+date: 2022-01-10 20:50:22 +0000
 output:
   md_document:
     variant: gfm
-    preserve_yaml: TRUE
+    preserve_yaml: yes
+  html_document:
+    df_print: paged
+always_allow_html: yes
+
+categories: jekyll update
+image: /assets/feature_images/post4.jpg
+permalink: /:title:output_ext
 ---
 
 A while ago I took a data visualization course to improve my Tableau and
