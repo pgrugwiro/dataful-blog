@@ -38,6 +38,12 @@ this project is to analyse the financial reports of the Local Authority
 maintained primary schools across England and to build an interactive
 visualization that could be used to derive insights from the raw data.
 
+
+<p align="center">
+  <img width="300" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img1.PNG">
+</p> 
+<br>
+
 #### Data
 
 The dataset used in this project was retrieved from “Find and Compare
