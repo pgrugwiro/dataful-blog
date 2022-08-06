@@ -16,7 +16,7 @@ permalink: /:title:output_ext
 ---
 
 
-This post is showcasing the use Tableau to exploring various datasets on local authority schools in England. 
+This post showcases the use Tableau to exploring various datasets on local authority schools in England. 
 
 #### Introduction
 
