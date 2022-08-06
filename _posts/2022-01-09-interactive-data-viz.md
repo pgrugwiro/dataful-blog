@@ -16,15 +16,7 @@ permalink: /:title:output_ext
 ---
 
 
-***Post under Construction***
-
-A while ago I took a data visualization course to improve my Tableau and
-Power BI skills. In one of the projects that I submitted, I went a step
-further to explain the design process of a practical interactive
-dashboard. First and foremost, data and business requirements must be
-understood before building the dashboard, then comes UI/UX requirements.
-This study was done on publicly available data on primary and secondary
-schools in England.
+This post is showcasing the use Tableau to exploring various datasets on local authority schools in England. 
 
 #### Introduction
 
