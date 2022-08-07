@@ -39,11 +39,6 @@ maintained primary schools across England and to build an interactive
 visualization that could be used to derive insights from the raw data.
 
 
-<p align="center">
-  <img width="300" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img1.PNG">
-</p> 
-<br>
-
 #### Data
 
 The dataset used in this project was retrieved from “Find and Compare
@@ -67,29 +62,24 @@ platform then provides a zip file containing all the datasets as well as
 a data dictionary that explains all the variables contained in the
 dataset.
 
-Figure 1. Instructions to Download Data
+<p align="center">
+  <img width="500" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img1.PNG">
+</p> 
+*Figure 1. Instructions to Download Data*
 
+<br>
 In addition to original variables, additional variables were derived
 from the data by means of algorithmic clustering or simple computations.
 Finally, latitude and longitude data for each school were added to the
 core dataset to help place the schools on a map. Below is the complete
-list of variables used in the study: Table 1. Data Dictionary Name
-Description Domain LAESTAB Local Authority Number + Establishment Number
-Nominal LONDON/NOT LONDON Describes whether the school is in London or
-not Boolean REGION NAME Name of the region in which the school is
-located Nominal RATPUTTEA Pupil: Teacher Ratio Float SALARY Mean Gross
-Salary Float GRANTFUNDING Funds received through various government
-grants + funds delegated by the local authority Float
-SELFGENERATEDINCOME Income from facilities, services, donations, private
-funds, etc.. Float TOTALEXPENDITURE Total Expenditure Float OFSTEDGRADE
-4-point grading system Nominal PTRWM\_EXP Percentage of pupils reaching
-the expected standard in reading, writing, and maths Float LATITUDE
-Latitude of the school location Float LONGITUDE Longitude of the school
-location Float NET INCOME Derived from (GRANTFUNDING +
-SELFGENERATEDINCOME – TOTAL EXPENDITURE) Float CLUSTER Algorithmic
-clustering based on various spending categories (teaching staff, supply
-staff, education support staff, premises, back office, catering, energy,
-learning resources, ICT, professional services, other expenses) Float
+list of variables used in the study: 
+
+<br>
+Table 1. Data Dictionary
+<p align="center">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img2.PNG">
+</p> 
+<br>
 
 #### Data Cleaning and Exploration
 
@@ -106,30 +96,43 @@ school spending and workforce information. This algorithmic clustering
 did not yield logically different clusters and was henceforth dropped
 from further consideration.
 
-Figure 2. Hierarchical Clustering of Spending and Workforce Variables.
-Persona Specification The user of the data visualization is an employee
+<p align="center">
+  <img width="500" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img3.PNG">
+</p> 
+*Figure 2. Hierarchical Clustering of Spending and Workforce Variables.*
+<br>
+
+**Persona Specification**
+<br>
+The user of the data visualization is an employee
 at the department of education who was tasked to compile a financial
 report that highlights school spending per pupil in all local authority
 maintained primary schools across England. At a glance, the user should
 be able to see the top spending local authorities in each geographic
 region of the country. Specifically, the user must be able to answer the
-following two questions: 1. How does the spending vary across local
-authorities within a given geographical region? 2. Is there a
-relationship between spending, school ranking, and pupil’s success?
+following two questions: 
+1. How does the spending vary across local authorities within a given geographical region? 
+2. Is there a relationship between spending, school ranking, and pupil’s success?
 
 #### Requirements Specification
 
 Different views (charts and graphs) were developed to help the user
 answer the questions above. To answer the question “How does the
 spending vary across local authorities within a given geographical
-region?”, the user must use the following visualizations: - A horizontal
-column chart that shows the average expenditure per pupil by local
-authority. - A map showing the location of the local authorities and
-individual schools. - A doughnut chart showing the proportions of
-spending categories. To answer the question “Is there a relationship
+region?”, the user must use the following visualizations: 
+
+- A horizontal column chart that shows the average expenditure per pupil by local
+authority. 
+- A map showing the location of the local authorities and individual schools. - A doughnut chart showing the proportions of spending categories.
+<br>
+
+To answer the question “Is there a relationship
 between spending, school ranking, and pupil’s success?”, the following
-visualizations will be used: - A barplot of Ofsted Ranking by Average
-Expenditure - A scatterplot of expenditure vs. academic performance of
+visualizations will be used: 
+
+- A barplot of Ofsted Ranking by Average
+Expenditure 
+- A scatterplot of expenditure vs. academic performance of
 pupils (reading, writing, and maths). In addition to the views above,
 additional key performance indices were developed to help the user
 further assess the difference between various local authorities and
@@ -163,8 +166,13 @@ of interest. Total Expenditure vs. Net Income was removed from
 consideration after data analysis showed no value added. Top N Local
 Authority parameter was added to the chart to allow the user to modify
 the number of top spending local authorities to display.
-
-Figure 3. Prototype Design.
+<br>
+<br>
+<p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img4.PNG">
+</p> 
+*Figure 3. Prototype Design.*
+<br>
 
 #### Implementation
 
@@ -183,8 +191,15 @@ user picks a maximum of 10 local authorities for this chart. In the
 dashboard, this horizontal column chart was used as a filter, which
 allows the user to select any given local authority of interest and view
 the data for that local authority only.
+<br>
+<br>
+<p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img5.PNG">
+</p> 
+*Figure 4. Column Chart of Expenditure by Local Authority.*
 
-Figure 4. Column Chart of Expenditure by Local Authority. The regional
+<br>
+The regional
 map of England was made by plotting the latitude vs longitude, coloured
 by region to view the geographical borders between regions, and total
 expenditure and school name added to the tooltip to allow the user to
@@ -192,16 +207,24 @@ view individual school’s information. Total expenditure is also added to
 the size mark to provide relative comparison of spending amongst
 different schools. The region filter is applied to the graph, allowing
 the user to view one region at a time or all regions at once.
-
-Figure 5. Map Chart of Primary Schools in England.
+<br>
+<br>
+<p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img6.PNG">
+</p> 
+*Figure 5. Map Chart of Primary Schools in England.*
 
 To view the proportions of spending categories for each selected local
 authority or region, a doughnut chart was drawn. Spending is split into
 four different categories: Faculty and staff salaries, spending related
 to maintaining the school property, spending related to teaching
 resources and ICT, and other spending (ex. Catering, etc…).
-
-Figure 6. Pie chart showing major spending categories.
+<br>
+<br>
+<p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img7.PNG">
+</p> 
+*Figure 6. Pie chart showing major spending categories.*
 
 Ofsted grading rates the schools using a four-point system: Inadequate,
 Requires Improvement, Good, and Outstanding. The following areas are
@@ -213,8 +236,12 @@ spending and school grade. The user can view the chart for the entire
 region or for a specific local authority. The user is also able to
 select a specific rating and the map will show the schools that fall
 into that rating category.
-
-Figure 7. Average Spending by Ofsted Grade Ranking.
+<br>
+<br>
+<p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img8.PNG">
+</p> 
+*Figure 7. Average Spending by Ofsted Grade Ranking.*
 
 The success of the pupils is measured in terms of their ability in
 reading, writing, and math. Each school has a percentage value for its
@@ -223,18 +250,32 @@ teacher salary the higher the success rate of students. It was also
 noticed that schools with a higher percentage of self-generated income
 with respect to the total income tend to have higher pupil’s success
 rate.
-
-Figure 8. SGI & Average Teacher Salary vs. Student Success.
+<br>
+<br>
+<p align="center">
+  <img width="450" height="500" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img9.PNG">
+</p> 
+*Figure 8. SGI & Average Teacher Salary vs. Student Success.*
 
 Two key performance indices were introduced: SGI (self-generated income
 percentage) and SSR (average student success rate), which allows the
 user to easily determine if a given local authority or region is higher
 or lower than average in terms of SGI and SSR.
+<br>
+<br>
+<p align="center">
+  <img width="250" height="150" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img10.PNG">
+</p> 
 
 The final implementation of the design is shown below. All the views fit
 together in once single 1000x800 desktop screen.
 
-Figure 9 Design Implementation - Tableau.
+<br>
+<br>
+<p align="center">
+  <img width="650" height="480" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img11.PNG">
+</p> 
+*Figure 9 Design Implementation - Tableau.*
 
 #### Evaluation
 
@@ -317,8 +358,12 @@ Expenditure per Pupil chart and does not show the region column as is
 the case in Tableau. It was also difficult to implement the ranking
 variable for the same chart. Nevertheless, both solutions work and can
 be used to answer the user’s questions.
-
-Figure 10. Design Implementation - Power BI.
+<br>
+<br>
+<p align="center">
+  <img width="580" height="480" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img12.PNG">
+</p> 
+*Figure 10. Design Implementation - Power BI.*
 
 #### Reflective Discussion
 
@@ -369,13 +414,12 @@ views that follow best practice. I count on building upon the knowledge
 I gained in the module and in the coursework to continue practicing and
 building more visualization tools for my blog (<https://dataful.blog>).
 
-References 1. Few, S (2004) Dashboard Confusion, Intelligent Enterprise
-2. Few, S (2013) Information Dashboard Design: Displaying data for
-at-a-glance monitoring. Analytics Press. 3. GOV.UK, (2021). Find and
-Compare Schools in England. \[Online\] Available at:
-<https://www.compare-school-performance.service.gov.uk/download-data>
-\[Accessed 1/4/21\]. 4. Hovis L., Gregory (2002). “Stop Searching for
-Information – Monitor it with Dashboard Technology.” DM Direct. 5.
-Spence, R. and Tweedie, L. (1998). “The Attribute Explorer: information
-synthesis via exploration”. Imperial College, London, UK 6. Tufte, E.R.,
-(1983). “The Visual Display of Quantitative Information”. Graphics Press
+<br>
+**References**
+<br>
+1.	Few, S (2004) Dashboard Confusion, Intelligent Enterprise 
+2.	Few, S (2013) Information Dashboard Design: Displaying data for at-a-glance monitoring. Analytics Press.
+3.	GOV.UK, (2021). Find and Compare Schools in England. [Online] Available at: https://www.compare-school-performance.service.gov.uk/download-data [Accessed 1/4/21].
+4.	Hovis L., Gregory (2002). “Stop Searching for Information – Monitor it with Dashboard Technology.” DM Direct. 
+5.	Spence, R. and Tweedie, L. (1998). “The Attribute Explorer: information synthesis via exploration”. Imperial College, London, UK
+6.	Tufte, E.R., (1983). “The Visual Display of Quantitative Information”. Graphics Press
