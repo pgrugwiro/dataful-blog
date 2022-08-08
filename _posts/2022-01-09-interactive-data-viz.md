@@ -273,7 +273,7 @@ together in once single 1000x800 desktop screen.
 <br>
 <br>
 <p align="center">
-  <img width="650" height="400" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img11.PNG">
+  <img width="500" height="350" src="https://raw.githubusercontent.com/pgrugwiro/dataful-blog/main/_images/_post6/img11.PNG">
 </p> 
 *Figure 9 Design Implementation - Tableau.*
 
